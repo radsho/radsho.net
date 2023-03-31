@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  direction: rtl;
+}
+
+body {
+  font-family: "IRANsans", Arial, Helvetica, sans-serif !important;
+  color: rgb(1, 0, 37) !important;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/bg.jpg);
+  background-attachment: fixed;
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #7f83fdbf, hsla(209, 96%, 31%, 0.75));
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+main strong {
+  max-width: 992px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(240, 240, 240);
+  text-align: justify;
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 49% 0%;
+  }
+  50% {
+    background-position: 52% 100%;
+  }
+  100% {
+    background-position: 49% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 49% 0%;
+  }
+  50% {
+    background-position: 52% 100%;
+  }
+  100% {
+    background-position: 49% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 49% 0%;
+  }
+  50% {
+    background-position: 52% 100%;
+  }
+  100% {
+    background-position: 49% 0%;
+  }
+}
+
+.logo-parent {
+  max-width: 250px;
+}
+
+.logo-parent img {
+  width: 100%;
+}
+
+main button {
+  all: unset;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px 0 10px;
+  color: #ffffff;
+  padding: 5px 15px 8px;
+  border: 1px solid #ffffff;
+  transition: all ease 0.3s;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+}
+
+.fa-paper-plane {
+  font-size: 20px;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+main button:hover {
+  border: 1px solid transparent;
+  background-color: #7c98e8;
+  transition: all ease 0.3s;
+}
+
+main button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  transform: translateX(-100%) rotate(45deg);
+  background: #fff;
+  transition: all ease 0.3s;
+}
+main button:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
