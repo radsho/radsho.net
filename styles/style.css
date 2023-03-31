@@ -84,7 +84,9 @@ main strong {
 .logo-parent img {
   width: 100%;
 }
-
+main a {
+  text-decoration: none;
+}
 main button {
   all: unset;
   cursor: pointer;
@@ -96,7 +98,6 @@ main button {
   border: 1px solid #ffffff;
   transition: all ease 0.3s;
   position: relative;
-  text-decoration: none;
   color: #fff;
   overflow: hidden;
 }
