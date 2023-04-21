@@ -30,3 +30,18 @@
 		 url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 		 url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
+@font-face {
+	font-family: IRANYekanX;
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/woff/IRANYekanX-Bold.woff") format("woff"),
+	  url("../fonts/woff2/IRANYekanX-Bold.woff2") format("woff2");
+  }
+  
+  @font-face {
+	font-family: IRANYekanX;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/woff/IRANYekanX-Regular.woff") format("woff");
+  }
+  
